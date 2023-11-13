@@ -1,8 +1,8 @@
 from dataclasses import dataclass
 from enum import Enum
 from typing import List, Optional
-from .jsonobject import JsonObject
-from .general import LabelType, ColourIndexType, Marker
+from cgcpluginlib import JsonObject
+from cgcpluginlib import LabelType, ColourIndexType, Marker
 
 
 class GeoInfoType(str, Enum):

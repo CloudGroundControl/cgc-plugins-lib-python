@@ -2,7 +2,7 @@ from dataclasses import dataclass
 import json
 import os
 from typing import Optional
-from .jsonobject import JsonObject
+from cgcpluginlib import JsonObject
 
 
 @dataclass()

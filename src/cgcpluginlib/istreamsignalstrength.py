@@ -1,6 +1,6 @@
 from dataclasses import dataclass
 from typing import Optional
-from .istream import IStream, IStreamType
+from cgcpluginlib import IStream, IStreamType
 import json
 
 

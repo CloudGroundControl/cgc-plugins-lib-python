@@ -2,11 +2,10 @@
 
 This library provides types and functions for common tasks in CGC plugins.
 
-## Usage
-Import the library into your plugin with:
-```
-import cgcpluginlib as cpl
+# CGC Plugins Library - Python
 
-# e.g.
-cpl.parse_args()
-```
+## Installation
+Install the library from [here](https://test.pypi.org/project/cgcpluginlib/)
+
+## Usage
+Check out the python hello world project [here](https://github.com/CloudGroundControl/cgc-plugins)

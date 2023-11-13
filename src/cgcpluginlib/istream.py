@@ -1,7 +1,7 @@
 from dataclasses import dataclass
 from enum import Enum
 from typing import Optional
-from .jsonobject import JsonObject
+from cgcpluginlib import JsonObject
 
 
 class IStreamType(str, Enum):

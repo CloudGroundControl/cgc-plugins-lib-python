@@ -2,7 +2,7 @@ from dataclasses import dataclass
 from enum import Enum, IntEnum
 from typing import Optional
 
-from .jsonobject import JsonObject
+from cgcpluginlib import JsonObject
 
 
 class LabelType(str, Enum):

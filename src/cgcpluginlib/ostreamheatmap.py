@@ -1,8 +1,8 @@
 from dataclasses import dataclass
 from typing import Optional
-from .jsonobject import JsonObject
-from .ostream import OStream, OStreamType
-from .visualobject import VoClickMap
+from cgcpluginlib import JsonObject
+from cgcpluginlib import OStream, OStreamType
+from cgcpluginlib import VoClickMap
 
 
 @dataclass(repr=False)

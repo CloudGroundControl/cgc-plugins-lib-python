@@ -1,7 +1,7 @@
 from dataclasses import dataclass
 from typing import List, Optional
-from .ostream import OStream, OStreamType
-from .geo import GeoInfo, GeoPolygon
+from cgcpluginlib import OStream, OStreamType
+from cgcpluginlib import GeoInfo, GeoPolygon
 
 
 @dataclass(repr=False)

@@ -1,8 +1,8 @@
 from dataclasses import dataclass
 import json
 from typing import Optional
-from .istream import IStream, IStreamType
-from .geo import GeoLocation, GeoLocationBase, Angular
+from cgcpluginlib import IStream, IStreamType
+from cgcpluginlib import GeoLocation, GeoLocationBase, Angular
 
 
 @dataclass(repr=False)

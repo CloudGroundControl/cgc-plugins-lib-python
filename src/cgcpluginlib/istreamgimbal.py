@@ -1,7 +1,7 @@
 from dataclasses import dataclass
 from typing import Optional
-from .istream import IStream, IStreamType
-from .geo import Angular
+from cgcpluginlib import IStream, IStreamType
+from cgcpluginlib import Angular
 import json
 
 

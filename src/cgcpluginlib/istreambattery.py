@@ -1,7 +1,7 @@
 from dataclasses import dataclass
 import json
 from typing import List, Optional
-from .istream import IStream, IStreamType
+from cgcpluginlib import IStream, IStreamType
 
 
 @dataclass(repr=False)

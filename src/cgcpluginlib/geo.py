@@ -51,8 +51,8 @@ class GeoInfo(JsonObject):
     '''
     GeoInfo contains information about a single point. If the geoInfoType is LINKED, the GeoInfo will be linked to the previous GeoInfo if it is in a GeoInfo list.
     '''
-    position: GeoLocation = GeoLocation()
-    velocity: GeoLocation = GeoLocation()
+    position: GeoLocation = GeoLocation(None, None)
+    velocity: GeoLocation = GeoLocation(None, None)
     geoInfoType: GeoInfoType = GeoInfoType.POINT
     imageUrl: Optional[str] = None
     clickable: Optional[str] = None

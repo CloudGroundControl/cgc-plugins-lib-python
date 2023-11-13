@@ -1,7 +1,3 @@
-# CGC Plugin Library
-
-This library provides types and functions for common tasks in CGC plugins.
-
 # CGC Plugins Library - Python
 
 ## Installation

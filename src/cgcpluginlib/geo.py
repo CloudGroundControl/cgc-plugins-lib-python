@@ -1,4 +1,4 @@
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from enum import Enum
 from typing import List, Optional
 from cgcpluginlib import JsonObject
@@ -45,19 +45,17 @@ class GeoLocation(JsonObject):
     geolocation: Optional[GeoLocationBase] = None
     angular: Optional[Angular] = None
 
-
 @dataclass(repr=False)
 class GeoInfo(JsonObject):
     '''
     GeoInfo contains information about a single point. If the geoInfoType is LINKED, the GeoInfo will be linked to the previous GeoInfo if it is in a GeoInfo list.
     '''
-    position: GeoLocation = GeoLocation(None, None)
-    velocity: GeoLocation = GeoLocation(None, None)
+    position: GeoLocation = field(default_factory=GeoLocation)
+    velocity: GeoLocation = field(default_factory=GeoLocation)
     geoInfoType: GeoInfoType = GeoInfoType.POINT
     imageUrl: Optional[str] = None
     clickable: Optional[str] = None
     marker: Optional[Marker] = None
-
 
 @dataclass(repr=False)
 class GeoPolygon(JsonObject):
